@@ -13,12 +13,20 @@ const Selling = React.lazy(() => import("../Catagories/Selling"));
 const ExploreProduct = React.lazy(() => import("../Catagories/ExploreProduct"));
 
 function Homw({ searchQuery }) {
-  const [showCategories, setShowCategories] = useState(false);
-
-  // Banner slider
-  const bannerImages = [IMG, IMG2, IMG3];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  // Banner images
+  const bannerImages = [IMG, IMG2];
+
+  // Handle resizing
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Auto slide banner
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -42,16 +50,9 @@ function Homw({ searchQuery }) {
       {/* Banner Section */}
       <div className="px-6 sm:px-12 lg:px-20 py-10">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Categories */}
-          <div className="lg:w-1/4 w-full">
-            <button
-              className="lg:hidden mb-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition"
-              onClick={() => setShowCategories(!showCategories)}
-            >
-              {showCategories ? "Hide Categories" : "Show Categories"}
-            </button>
-
-            {(showCategories || window.innerWidth >= 1024) && (
+          {/* Categories - Only show on desktop */}
+          {windowWidth >= 1024 && (
+            <div className="lg:w-1/4 w-full">
               <ul className="space-y-3 text-gray-800 font-medium pr-6 lg:border-r border-gray-300">
                 <li><a href="/women" className="hover:text-purple-600 transition">Women Fashion</a></li>
                 <li><a href="/men" className="hover:text-purple-600 transition">Men's Fashion</a></li>
@@ -63,22 +64,23 @@ function Homw({ searchQuery }) {
                 <li><a href="/groceries" className="hover:text-purple-600 transition">Groceries & Pets</a></li>
                 <li><a href="/health" className="hover:text-purple-600 transition">Health & Beauty</a></li>
               </ul>
-            )}
-          </div>
+            </div>
+          )}
 
-          {/* Right Slider */}
-          <div className="lg:w-3/4 w-full flex justify-center relative overflow-hidden rounded-lg shadow-md">
-            <motion.img
-              key={currentIndex}
-              src={bannerImages[currentIndex]}
-              alt="Banner"
-              loading="lazy"
-              className="w-full max-h-96 object-cover rounded-lg"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-            />
-          </div>
+         {/* Banner Slider */}
+<div className="lg:w-3/4 w-full flex justify-center relative overflow-hidden rounded-lg shadow-md px-4 sm:px-6 md:px-0">
+  <motion.img
+    key={currentIndex}
+    src={bannerImages[currentIndex]}
+    alt="Banner"
+    loading="lazy"
+    className="w-full max-w-full h-auto rounded-lg"
+    initial={{ opacity: 0, x: 50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}
+  />
+</div>
+
         </div>
       </div>
 

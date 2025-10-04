@@ -9,7 +9,7 @@ const Cart = () => {
   const totalPrice = cart.reduce((acc, item) => acc + item.price, 0);
 
   return (
-    <div className="px-6 sm:px-16 py-10 font-sans bg-gray-50 min-h-screen">
+    <div className="px-4 sm:px-6 lg:px-16 py-10 font-sans bg-gray-50 min-h-screen">
       <motion.h1
         className="text-3xl font-bold mb-8"
         initial={{ opacity: 0, y: -30 }}
@@ -25,7 +25,7 @@ const Cart = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          Your cart is empty!  
+          Your cart is empty!
         </motion.p>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -39,10 +39,10 @@ const Cart = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 50 }}
                   transition={{ duration: 0.5 }}
-                  className="flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4 hover:shadow-xl transition"
+                  className="bg-white shadow-md rounded-lg p-4 mb-4 hover:shadow-xl transition flex flex-col sm:flex-row sm:items-center justify-between gap-4"
                 >
                   {/* Image + details */}
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 w-full sm:w-auto">
                     <motion.img
                       src={item.images.image1}
                       alt={item.title}
@@ -50,23 +50,19 @@ const Cart = () => {
                       whileHover={{ scale: 1.05 }}
                       transition={{ type: "spring", stiffness: 200 }}
                     />
-                    <div>
+                    <div className="flex-1">
                       <h2 className="font-semibold text-lg">{item.title}</h2>
                       <p className="text-purple-600 font-bold">${item.price}</p>
                     </div>
                   </div>
 
                   {/* Actions */}
-                  <div className="flex items-center gap-4">
-                    {/* Quantity (future: make dynamic) */}
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                    {/* Quantity */}
                     <div className="flex items-center border rounded-md">
-                      <button className="px-2 py-1 text-lg hover:bg-gray-200">
-                        -
-                      </button>
+                      <button className="px-2 py-1 text-lg hover:bg-gray-200">-</button>
                       <span className="px-3">1</span>
-                      <button className="px-2 py-1 text-lg hover:bg-gray-200">
-                        +
-                      </button>
+                      <button className="px-2 py-1 text-lg hover:bg-gray-200">+</button>
                     </div>
 
                     {/* Remove */}
