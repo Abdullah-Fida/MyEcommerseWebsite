@@ -1,0 +1,311 @@
+// Women Fashion
+export const womenFashionProducts = [
+  {
+    title: "Red Dress",
+    price: 49.99,
+    description: "A stunning red evening dress crafted with premium fabric. Perfect for parties, weddings, and formal events. The flowing silhouette gives elegance and confidence.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&q=80",
+    },
+    colors: ["Red", "Black", "Maroon"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Blue Jeans",
+    price: 39.99,
+    description: "Classic slim-fit blue jeans with durable stitching. Designed for everyday comfort and style. Matches perfectly with t-shirts, shirts, or jackets.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1582418702059-97ebafb35d09?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1581952976147-5a2d15560349?w=800&q=80",
+    },
+    colors: ["Blue", "Dark Blue", "Black"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Handbag",
+    price: 59.99,
+    description: "Elegant leather handbag with spacious compartments. Designed with both fashion and practicality in mind. A must-have accessory for casual and formal looks.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=800&q=80",
+    },
+    colors: ["Black", "Brown", "Beige"],
+    sizes: ["Medium"],
+  },
+  {
+    title: "High Heels",
+    price: 29.99,
+    description: "Stylish high heels designed for comfort and glamour. Perfect for parties, office, and evening outings. The sleek design enhances your overall look.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&q=80",
+    },
+    colors: ["Red", "Black", "Silver"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "White Blouse",
+    price: 24.99,
+    description: "Elegant white blouse suitable for work or casual outings. Lightweight and breathable fabric ensures comfort all day.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1485231183945-fffde7cb34eb?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1586796449238-b9d0e2badb3c?w=800&q=80",
+    },
+    colors: ["White", "Cream", "Beige"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Black Skirt",
+    price: 34.99,
+    description: "Classic black skirt made of soft fabric. Perfect for office, parties, and casual outings.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1504198697985-875e8feb0a5f?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1551537487-f6d13ad6a9e4?w=800&q=80",
+    },
+    colors: ["Black", "Dark Grey"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Summer Top",
+    price: 19.99,
+    description: "Lightweight summer top with vibrant colors. Perfect for casual summer outings.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1589810635657-232948472d98?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1525171254930-643fc658b3f4?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1505714197109-e8269c1d1e0e?w=800&q=80",
+    },
+    colors: ["Yellow", "Blue", "Green"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Casual Hoodie",
+    price: 44.99,
+    description: "Comfortable casual hoodie made with soft cotton. Ideal for daily wear and outdoor activities.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1578768070127-0c4c9e4be3c7?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1586796449238-b9d0e2badb3c?w=800&q=80",
+    },
+    colors: ["Grey", "Black", "Navy"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Leather Jacket",
+    price: 99.99,
+    description: "Premium black leather jacket, perfect for stylish looks and keeping warm in cooler weather.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1601924994987-69e26d50dc72?w=800&q=80",
+    },
+    colors: ["Black", "Brown"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Evening Gown",
+    price: 149.99,
+    description: "Elegant evening gown for special occasions. Soft flowing fabric with stylish design.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80",
+    },
+    colors: ["Red", "Blue", "Black"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+];
+
+// Electronics
+export const electronicsProducts = [
+  {
+    title: "Smartphone",
+    price: 699.99,
+    description: "Latest smartphone with cutting-edge features, high-resolution camera, and long-lasting battery life.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80",
+    },
+    colors: ["Black", "Silver", "Blue"],
+    sizes: ["128GB", "256GB", "512GB"],
+  },
+  {
+    title: "Laptop",
+    price: 1099.99,
+    description: "High-performance laptop for work and gaming. Slim design with powerful processor and graphics card.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=800&q=80",
+    },
+    colors: ["Grey", "Silver"],
+    sizes: ["13-inch", "15-inch"],
+  },
+  {
+    title: "Headphones",
+    price: 149.99,
+    description: "Noise-cancelling wireless headphones with deep bass and comfortable fit. Perfect for music and travel.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+    },
+    colors: ["Black", "White"],
+    sizes: ["One Size"],
+  },
+  {
+    title: "Smartwatch",
+    price: 199.99,
+    description: "Feature-packed smartwatch with fitness tracking, notifications, and long battery life.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1434493652601-87c7ed9317c6?w=800&q=80",
+    },
+    colors: ["Black", "Silver", "Gold"],
+    sizes: ["Small", "Medium"],
+  },
+  {
+    title: "Bluetooth Speaker",
+    price: 89.99,
+    description: "Portable Bluetooth speaker with deep bass, long battery life, and waterproof design.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=800&q=80",
+    },
+    colors: ["Black", "Blue", "Red"],
+    sizes: ["One Size"],
+  },
+  {
+    title: "Camera",
+    price: 499.99,
+    description: "High-resolution DSLR camera with multiple lenses and advanced photography features.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=800&q=80",
+    },
+    colors: ["Black", "Silver"],
+    sizes: ["One Size"],
+  },
+];
+
+// Explore Products
+export const exploreProducts = [
+  {
+    title: "Running Shoes",
+    price: 89.99,
+    description: "Lightweight and comfortable running shoes designed for everyday training and casual wear.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800&q=80",
+    },
+    colors: ["Black", "White", "Red"],
+    sizes: ["7", "8", "9", "10", "11"],
+  },
+  {
+    title: "Backpack",
+    price: 59.99,
+    description: "Durable and spacious backpack with multiple compartments, perfect for school, travel, and work.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1577733975198-7c4e56761a67?w=800&q=80",
+    },
+    colors: ["Black", "Blue", "Green"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Sunglasses",
+    price: 39.99,
+    description: "Stylish sunglasses with UV protection, lightweight frame, and comfortable fit for daily wear.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&q=80",
+    },
+    colors: ["Black", "Brown", "Grey"],
+    sizes: ["One Size"],
+  },
+  {
+    title: "Fitness Tracker",
+    price: 69.99,
+    description: "Compact fitness tracker with heart rate monitor, step counter, and sleep tracking features.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1557438159-51eec7a6c9e8?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&q=80",
+    },
+    colors: ["Black", "White"],
+    sizes: ["One Size"],
+  },
+  {
+    title: "Yoga Mat",
+    price: 29.99,
+    description: "Non-slip yoga mat, lightweight and portable, ideal for home or studio workouts.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    },
+    colors: ["Purple", "Green", "Blue"],
+    sizes: ["Standard"],
+  },
+  {
+    title: "Water Bottle",
+    price: 14.99,
+    description: "Stainless steel insulated water bottle keeping drinks cold or hot for hours. Perfect for workouts and travel.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1605163398838-d5c5a5a3c7a4?w=800&q=80",
+    },
+    colors: ["Silver", "Blue", "Black"],
+    sizes: ["500ml", "750ml"],
+  },
+  {
+    title: "Gym Gloves",
+    price: 19.99,
+    description: "Durable gym gloves for weightlifting and fitness exercises, providing grip and protection.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1571019613455-1cb2f99b2d8c?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1571019613456-1cb2f99b2d8d?w=800&q=80",
+    },
+    colors: ["Black", "Grey", "Red"],
+    sizes: ["Small", "Medium", "Large"],
+  },
+  {
+    title: "Foam Roller",
+    price: 24.99,
+    description: "High-density foam roller for muscle recovery and stretching exercises, ideal for home workouts.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1571019613455-1cb2f99b2d8c?w=800&q=80",
+    },
+    colors: ["Black", "Blue", "Purple"],
+    sizes: ["Standard"],
+  },
+  {
+    title: "Jump Rope",
+    price: 9.99,
+    description: "Lightweight jump rope for cardio workouts, improving stamina and coordination.",
+    images: {
+      image1: "https://images.unsplash.com/photo-1571019613579-2c17667c6d6e?w=800&q=80",
+      image2: "https://images.unsplash.com/photo-1571019613580-2c17667c6d6f?w=800&q=80",
+      image3: "https://images.unsplash.com/photo-1571019613581-2c17667c6d70?w=800&q=80",
+    },
+    colors: ["Red", "Blue", "Black"],
+    sizes: ["Standard"],
+  },
+];
