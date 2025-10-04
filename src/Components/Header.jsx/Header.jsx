@@ -22,7 +22,6 @@ function Header({ onSearch }) {
             ShopNow
           </a>
         </p>
-        <div className="cursor-pointer absolute right-4">English ▼</div>
       </div>
 
       {/* Navigation */}
