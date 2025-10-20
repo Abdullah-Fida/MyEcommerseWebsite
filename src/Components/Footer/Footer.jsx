@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-black text-white px-6 sm:px-12 lg:px-20 py-12 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         
-        {/* Column 1 - Logo & Description */}
+      
         <div>
           <h2 className="text-2xl font-bold mb-4">Exclusive</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
@@ -12,7 +12,7 @@ function Footer() {
           </p>
         </div>
 
-        {/* Column 2 - Quick Links */}
+       
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -23,7 +23,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 3 - Customer Service */}
+        
         <div>
           <h3 className="text-lg font-semibold mb-4">Customer Service</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -34,7 +34,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 4 - Newsletter */}
+    
         <div>
           <h3 className="text-lg font-semibold mb-4">Stay Connected</h3>
           <p className="text-gray-400 text-sm mb-4">
@@ -51,7 +51,7 @@ function Footer() {
             </button>
           </div>
 
-          {/* Social Media */}
+
           <div className="flex gap-4 mt-5 text-gray-400 text-lg">
             <a href="#" className="hover:text-white">🌐</a>
             <a href="#" className="hover:text-white">🐦</a>
